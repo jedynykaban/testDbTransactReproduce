@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbTransactProblem", "DbTransactProblem\DbTransactProblem.csproj", "{45B912E3-C1A4-4255-B379-916CC8B7149A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45B912E3-C1A4-4255-B379-916CC8B7149A}.Debug|x64.ActiveCfg = Debug|x64
+		{45B912E3-C1A4-4255-B379-916CC8B7149A}.Debug|x64.Build.0 = Debug|x64
+		{45B912E3-C1A4-4255-B379-916CC8B7149A}.Release|x64.ActiveCfg = Release|x64
+		{45B912E3-C1A4-4255-B379-916CC8B7149A}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F70F672-4291-4B5D-AFA3-FA269698E62B}
+	EndGlobalSection
+EndGlobal
