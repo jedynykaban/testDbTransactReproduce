@@ -60,7 +60,7 @@ namespace DbTransactProblem.Implementation
             return new Response
             {
                 Headers = {["Access-Control-Allow-Origin"] = "*", ["Content-Type"] = "application/json"},
-                Body = new TestRepository(new ScDbSelectionUtil(), null)
+                Body = new TestRepository(new ScDbSelectionUtil(), null, new BlobReaderWriter())
                     .AddOrUpdateDbTransactExplicitlyCalled(typedJson)
                     ?.ToJson(),
                 StatusCode = (ushort)System.Net.HttpStatusCode.OK

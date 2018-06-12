@@ -52,11 +52,14 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Implementation\Blob.cs" />
+    <Compile Include="Implementation\BlobReaderWriter.cs" />
     <Compile Include="Implementation\ScDbDataManipulationUtil.cs" />
     <Compile Include="Implementation\ScDbSelectionUtil.cs" />
     <Compile Include="Implementation\TestDbEntity.cs" />
     <Compile Include="Implementation\TestHttpHandler.cs" />
     <Compile Include="Implementation\TestRepository.cs" />
+    <Compile Include="Interfaces\IBlobReaderWriter.cs" />
     <Compile Include="Interfaces\IDbDataManipulationUtil.cs" />
     <Compile Include="Interfaces\IDbSelectionUtil.cs" />
     <Compile Include="Interfaces\IHttpHandler.cs" />

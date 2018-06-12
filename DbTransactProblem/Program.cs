@@ -25,6 +25,10 @@ namespace DbTransactProblem
             container.Register<ITestRepository, TestRepository>();
             container.Register<IDbSelectionUtil, ScDbSelectionUtil>(new PerContainerLifetime());
             container.Register<IDbDataManipulationUtil, ScDbDataManipulationUtil>(new PerContainerLifetime());
+            var blobReaderWriter = new BlobReaderWriter();
+            container.Register<IBlobReader>(factory => blobReaderWriter, new PerContainerLifetime());
+            container.Register<IBlobWriter>(factory => blobReaderWriter, new PerContainerLifetime());
+            container.Register<IBlobReaderWriter>(factory => blobReaderWriter, new PerContainerLifetime());
 
             return container;
         }

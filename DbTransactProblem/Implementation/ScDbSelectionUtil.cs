@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using DbTransactProblem.Interfaces;
 using Starcounter;
 
@@ -10,5 +11,8 @@ namespace DbTransactProblem.Implementation
 
         public TOut SelectFirstOrDefault<TOut>()
             => Db.SQL<TOut>(SelectAllQueryStatement<TOut>()).FirstOrDefault();
+
+        public IEnumerable<TOut> SelectAll<TOut>()
+            => Db.SQL<TOut>(SelectAllQueryStatement<TOut>());
     }
 }
